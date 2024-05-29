@@ -1,0 +1,7 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./fonts.css');
+
+.bg-orange { 
+    background-color: #f59c00;
+}

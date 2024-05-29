@@ -1,0 +1,369 @@
+.main-banner{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px 0 20px;
+}
+
+.main-banner .title { 
+    font-size: 57px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+.main-banner .title h3 { 
+    margin-bottom: 0;
+}
+
+.main-banner .title span { 
+    margin-left: 40px;
+}
+
+
+
+/* PRESENTATION  */
+
+.presentation .text-gray { 
+    font-size: 20px;
+}
+.presentation .card-title { 
+    font-size: 35px;
+}
+.presentation-text { 
+    max-width: 500px;
+}
+.card-main { 
+    gap: 5px;
+}
+.card-main h4::before { 
+    background-color: #fff;
+    margin: 5px 0 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #f59c00;
+    border-bottom: 15px solid #f59c00;
+    border-left: 15px solid #fff;
+    content: "";
+    position: absolute;
+    left: 0;
+}
+.card-main div { 
+    max-width: 485px;
+    height: 100%;
+}
+
+.card-main h4 { 
+    font-size: 30px
+}
+.card-main img { 
+    width: 100%;
+    height: 100%;
+}
+
+
+.screen-image img { 
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.description-card { 
+    position: relative;
+}
+.description-card p { 
+    padding: 15px 20px;
+    padding-left: 60px;
+    margin-bottom: 0;
+    background-color: #f59c00;
+    width: 840px;
+    color: white;
+    position: relative;
+    min-height: 78px;
+    max-height: 78px;
+    font-size: 14px;
+
+}
+.description-card::after { 
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border-right: 5px solid #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    background-color: #f59c00;
+}
+
+
+.know-more { 
+    border: 1px solid #f59c00;
+    font-weight: bold;
+}
+.know-more::before {
+    content: url(/assets/images/icons/verified.svg);
+    transform: translateY(3px);
+}
+
+
+
+/* EACH PAGE STYLE */
+
+/* responsys */
+
+.main-banner.oracle-responsys { 
+    background-image: url("/assets/images/bg-responsys.jpg");
+}
+
+.responsys-description-cards .description-card.email::after { 
+    background-image: url('/assets/images/icons/icons-mail.png');
+}
+.responsys-description-cards .description-card.mobile::after { 
+    background-image: url('/assets/images/icons/icons-mobile.png');
+}
+.responsys-description-cards .description-card.display::after { 
+    background-image: url('/assets/images/icons/icons-arrow.png');
+}
+.responsys-description-cards .description-card.platform::after { 
+    background-image: url('/assets/images/icons/icons-screen.png');
+}
+.responsys-description-cards .description-card.chat::after { 
+    background-image: url('/assets/images/icons/icons-chat.png');
+}
+
+/* eloqua */
+.main-banner.oracle-eloqua { 
+    background-image: url("/assets/images/bg-eloqua.jpg");
+}
+.eloqua-description-cards .description-card.email::after { 
+    background-image: url('/assets/images/icons/icons-mail.png');
+}
+.eloqua-description-cards .description-card.tool::after { 
+    background-image: url('/assets/images/icons/tool-icon.png');
+}
+.eloqua-description-cards .description-card.workspace::after { 
+    background-image: url('/assets/images/icons/work-space.png');
+}
+.eloqua-description-cards .description-card.landing::after { 
+    background-image: url('/assets/images/icons/landing-icon.png');
+}
+.eloqua-description-cards .description-card.link::after { 
+    background-image: url('/assets/images/icons/link-icon.png');
+}
+
+/* oracle service */
+.service-description-cards .description-card.web::after { 
+    background-image: url('/assets/images/icons/web.png');
+}
+.service-description-cards .description-card.talk::after { 
+    background-image: url('/assets/images/icons/talk.png');
+}
+.service-description-cards .description-card.segment::after { 
+    background-image: url('/assets/images/icons/segment.png');
+}
+.service-description-cards .description-card.tecnic::after { 
+    background-image: url('/assets/images/icons/tecnic.png');
+}
+.service-description-cards .description-card.report::after { 
+    background-image: url('/assets/images/icons/report.png');
+}
+.service-description-cards .description-card.email::after { 
+    background-image: url('/assets/images/icons/icons-mail.png');
+}
+.service-description-cards .description-card.star::after { 
+    background-image: url('/assets/images/icons/star.png');
+}
+.service-description-cards .description-card.hands::after { 
+    background-image: url('/assets/images/icons/hands.png');
+}
+
+/* oracle commerce */
+.main-banner.oracle-commerce { 
+    background-image: url("/assets/images/bg-commerce.jpg");
+}
+.commerce-description-cards .description-card.share::after { 
+    background-image: url('/assets/images/icons/share.png');
+}
+.commerce-description-cards .description-card.mobile::after { 
+    background-image: url('/assets/images/icons/icons-mobile.png');
+}
+.commerce-description-cards .description-card.cloud::after { 
+    background-image: url('/assets/images/icons/cloud.png');
+}
+.commerce-description-cards .description-card.cart::after { 
+    background-image: url('/assets/images/icons/cart.png');
+}
+.commerce-description-cards .description-card.settings::after { 
+    background-image: url('/assets/images/icons/settings.png');
+}
+
+/* maxymiser */
+.main-banner.oracle-maxymiser { 
+    background-image: url("/assets/images/bg-maxymizer.jpg");
+}
+.maxymiser-description-cards .description-card.data::after { 
+    background-image: url('/assets/images/icons/data.png');
+}
+.maxymiser-description-cards .description-card.personalization::after { 
+    background-image: url('/assets/images/icons/personalization.png');
+}
+.maxymiser-description-cards .description-card.tecnic::after { 
+    background-image: url('/assets/images/icons/tecnic.png');
+}
+.maxymiser-description-cards .description-card.talk::after { 
+    background-image: url('/assets/images/icons/talk.png');
+}
+.maxymiser-description-cards .description-card.settings::after { 
+    background-image: url('/assets/images/icons/settings.png');
+}
+/* sales */
+.main-banner.oracle-sales { 
+    background-image: url("/assets/images/bg-sales.jpg");
+}
+.sales-description-cards .description-card.chat::after { 
+    background-image: url('/assets/images/icons/icons-chat.png');
+}
+.sales-description-cards .description-card.mobile::after { 
+    background-image: url('/assets/images/icons/icons-mobile.png');
+}
+.sales-description-cards .description-card.tool::after { 
+    background-image: url('/assets/images/icons/tool-icon.png');
+}
+.sales-description-cards .description-card.cart::after { 
+    background-image: url('/assets/images/icons/cart.png');
+}
+.sales-description-cards .description-card.pin::after { 
+    background-image: url('/assets/images/icons/pin.png');
+}
+/* loyalty */
+.main-banner.oracle-loyalty { 
+    background-image: url("/assets/images/bg-loyalty.jpg");
+}
+.loyalty-description-cards .description-card.user::after { 
+    background-image: url('/assets/images/icons/user.png');
+}
+.loyalty-description-cards .description-card.cart::after { 
+    background-image: url('/assets/images/icons/cart.png');
+}
+.loyalty-description-cards .description-card.screen::after { 
+    background-image: url('/assets/images/icons/icons-screen.png');
+}
+.loyalty-description-cards .description-card.monitorar::after { 
+    background-image: url('/assets/images/icons/monitorar.png');
+}
+.loyalty-description-cards .description-card.workspace::after { 
+    background-image: url('/assets/images/icons/work-space.png');
+}
+/* bluekay */
+.main-banner.oracle-bluekay { 
+    background-image: url("/assets/images/bg-bluekai.jpg");
+}
+.bluekay-description-cards .description-card.monitorar::after { 
+    background-image: url('/assets/images/icons/monitorar.png');
+}
+.bluekay-description-cards .description-card.share::after { 
+    background-image: url('/assets/images/icons/share.png');
+}
+.bluekay-description-cards .description-card.chat::after { 
+    background-image: url('/assets/images/icons/icons-chat.png');
+}
+.bluekay-description-cards .description-card.user::after { 
+    background-image: url('/assets/images/icons/user.png');
+}
+/* content */
+.main-banner.oracle-content { 
+    background-image: url("/assets/images/bg-content-cloud.jpg");
+}
+.content-description-cards .description-card.calendar::after { 
+    background-image: url('/assets/images/icons/calendar.png');
+}
+.content-description-cards .description-card.share::after { 
+    background-image: url('/assets/images/icons/share.png');
+}
+.content-description-cards .description-card.pen::after { 
+    background-image: url('/assets/images/icons/pen.png');
+}
+.content-description-cards .description-card.chat::after { 
+    background-image: url('/assets/images/icons/icons-chat.png');
+}
+.content-description-cards .description-card.flux::after { 
+    background-image: url('/assets/images/icons/flux.png');
+}
+/* social */
+.main-banner.oracle-social { 
+    background-image: url("/assets/images/bg-social-cloud.jpg");
+}
+.social-description-cards .description-card.tool::after { 
+    background-image: url('/assets/images/icons/tool-icon.png');
+}
+.social-description-cards .description-card.monitorar::after { 
+    background-image: url('/assets/images/icons/monitorar.png');
+}
+.social-description-cards .description-card.cloud::after { 
+    background-image: url('/assets/images/icons/cloud.png');
+}
+.social-description-cards .description-card.flux::after { 
+    background-image: url('/assets/images/icons/flux.png');
+}
+.social-description-cards .description-card.share::after { 
+    background-image: url('/assets/images/icons/share.png');
+}
+/* ics */
+.ics-description-cards .description-card.tool::after { 
+    background-image: url('/assets/images/icons/tool1.png');
+}
+.ics-description-cards .description-card.tecnic::after { 
+    background-image: url('/assets/images/icons/tecnic.png');
+}
+.ics-description-cards .description-card.settings::after { 
+    background-image: url('/assets/images/icons/settings.png');
+}
+.ics-description-cards .description-card.link::after { 
+    background-image: url('/assets/images/icons/link-icon.png');
+}
+/* analytics */
+.main-banner.oracle-analytics { 
+    background-image: url("/assets/images/bg-analytics.jpg");
+}
+.analytics-description-cards .description-card.data::after { 
+    background-image: url('/assets/images/icons/data.png');
+}
+.analytics-description-cards .description-card.link::after { 
+    background-image: url('/assets/images/icons/link-icon.png');
+}
+.analytics-description-cards .description-card.user::after { 
+    background-image: url('/assets/images/icons/user.png');
+}
+.analytics-description-cards .description-card.personalization::after { 
+    background-image: url('/assets/images/icons/personalization.png');
+}
+.analytics-description-cards .description-card.workspace::after { 
+    background-image: url('/assets/images/icons/work-space.png');
+}
+.analytics-description-cards .description-card.mobile::after { 
+    background-image: url('/assets/images/icons/icons-mobile.png');
+}
+.analytics-description-cards .description-card.landing::after { 
+    background-image: url('/assets/images/icons/landing-icon.png');
+}
+
+
+@media (max-width: 992px) {
+    .description-card::after { 
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-right: 0;
+        border-bottom: 5px solid #fff;
+    }
+    .description-card p { 
+        padding: 50px 20px;
+        width: unset;
+        min-height: unset;
+        max-height: unset;
+    }
+    .description-card-wrapper { 
+        margin-bottom: 6rem !important;
+    }
+}

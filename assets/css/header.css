@@ -1,0 +1,129 @@
+header{ 
+    padding: 20px 0;
+    width: 100vw;
+}
+
+.header-container{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-hamburger { 
+    background: none;
+    border: none;
+}
+
+.nav ul { 
+    list-style: none;
+    font-size: 18px;
+}
+
+
+.header-menu{ 
+    position: fixed;
+    right: 20px;
+    z-index: 99;
+    transform: translateY(10px);
+}
+
+.header-scrolled { 
+    display: none;
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    justify-content: center;
+    height: 0;
+    transition: .2s;
+}
+
+.header-scrolled.active { 
+    height: auto;
+    display: flex;
+}
+
+
+
+.nav-menu-open { 
+    position: relative;
+}
+
+.nav-menu-open .nav { 
+    position: fixed;
+    z-index: 9;
+    background-color: #fff;
+    top: 0;
+    width: 100vw;
+    height: 0;
+
+    transition: .2s;
+}
+.nav-menu-open .nav.active { 
+    height: 100vh;
+}
+
+.nav-menu-open .nav ul { 
+    display: flex;
+    margin-top: 70px;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    display: none;
+}
+.nav-menu-open .nav.active ul { 
+    display: flex;
+}
+.nav-menu-open .nav ul li { 
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+.nav-menu-open .nav ul li a { 
+    color: #f59c00;
+}
+.nav-menu-open .nav ul li a:hover { 
+    color: #666666;
+}
+
+.menu-hamburger { 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.menu-hamburger span { 
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000;
+    display: block;
+    transition: .2s;
+}
+
+.menu-hamburger.active .line-1 { 
+    /* transform: rotate(45deg) translate3d(10px, 10px, 10px); */
+    transform: rotate(45deg) translateY(8px) translateX(10px);
+}
+.menu-hamburger.active .line-2{ 
+    transform: rotate(-45deg);
+}
+.menu-hamburger.active .line-3{ 
+    display: none;
+}
+@media (max-width: 1200px) { 
+    .header-scrolled { 
+        display: none !important;
+    }
+
+
+}
+
+
+@media (min-width: 1200px){ 
+    .header-container.disable { 
+        visibility: hidden;
+    }
+}

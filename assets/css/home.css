@@ -1,0 +1,345 @@
+/* START CAROUSEL BANNER STYLE */
+.home-banner .carousel-inner { 
+    height: 700px;
+}
+
+.home-banner .carousel-item{ 
+    height: 100%;
+}
+
+.slide-text-container{ 
+    /* max-width: 450px; */
+    
+}
+.carousel-item { 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.slide-1 { 
+    background-image: url('/assets/images/slider-image-1.png');
+}
+.slide-2 { 
+    background-image: url('/assets/images/slider-image-2.jpg');
+}
+
+.slide-text{ 
+    max-width: 450px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* END CAROUSEL BANNER STYLE */
+
+ body{ 
+    height: 2000px;
+ }
+/* START WHAT-WE-DO  */
+#what-we-do { 
+    background-color: #f3f3f3;
+    font-size: 22px;
+}
+
+#what-we-do .title{
+    border-bottom: 2px solid #f59c00;
+}
+
+#what-we-do .coontainer { 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.baloon-triangle{ 
+    background-color: #f3f3f3;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px) rotate(-45deg);
+}
+/* END WHAT-WE-DO  */
+
+/* START WHAT-WE-DO BLOCKS  */
+#automacao-marketing .title, 
+#crm-loyalty .title, 
+#e-commerce .title { 
+    font-size: 4em;
+}
+#automacao-marketing p, 
+#crm-loyalty p, 
+#e-commerce p { 
+    font-size: 20px;
+}
+#automacao-marketing img, 
+#crm-loyalty img, 
+#e-commerce img { 
+    width: 80%;;
+}
+
+.buttons { 
+    gap: 20px;
+}
+.buttons a { 
+    color: #f59c00;
+    border: 1px solid #f59c00;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+.view-cases::before {
+    content: url("/assets/images/icons/verified.svg");
+ }
+/* END WHAT-WE-DO BLOCKS  */
+.more-info::before {
+    content: url("/assets/images/icons/plus.svg");
+ }
+/* END WHAT-WE-DO BLOCKS  */
+
+/* START SERVICES */
+#services .title { 
+    font-size: 4em;
+}
+
+
+
+.service-card { 
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 280px;
+    position: relative;
+
+}
+.service { 
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service-image { 
+    margin-left: -20px;
+    margin-top: 10px;
+    position: relative;
+}
+.service-image.reverse { 
+    margin-left: 0;
+    margin-right: -20px;
+}
+
+.service-title strong { 
+    font-size: 110px;
+}
+.service-title h4 { 
+    font-size: 40px;
+}
+.discover-button { 
+    align-self: center;
+    text-decoration: none;
+    border: 1px solid #f59c00;
+    padding: 10px 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+}
+
+
+.discover-button::before{ 
+    /* content: url(/assets/images/icons/verified.svg); */
+    content: url(/assets/images/icons/verified.svg);
+}
+/* END SERVICES */
+
+
+/* START ORACLE CX */
+#oracle-cx { 
+    background-image: url('/assets/images/bg-Oracle-CX.jpg');
+    padding-bottom: 40px;
+}
+
+.oracle-cx-logo{ 
+    border-right: 2px solid white;
+}
+.oracle-cx-text{ 
+    font-size: 22px;
+}
+/* END ORACLE CX */
+
+/* ORACLE SERVICES START */
+
+.oracle-services { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    justify-items: center;
+}
+
+.oracle-service { 
+    width: 177px;
+    height: 177px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+
+}
+.oracle-service .hover { 
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .2s;
+    background-color: #000;
+    opacity: .8;
+    height: 100%;
+}
+.oracle-service:hover .hover{ 
+    visibility: visible;
+}
+
+.oracle-service-1 { 
+    background-image: url('/assets/images/oracle/oracle-responsys.png');
+}
+.oracle-service-2 { 
+    background-image: url('/assets/images/oracle/oracle-eloqua.png');
+}
+.oracle-service-3 { 
+    background-image: url('/assets/images/oracle/oracle-service.png');
+}
+.oracle-service-4 { 
+    background-image: url('/assets/images/oracle/oracle-commerce.png');
+}
+.oracle-service-5 { 
+    background-image: url('/assets/images/oracle/oracle-maxymiser.png');
+}
+.oracle-service-6 { 
+    background-image: url('/assets/images/oracle/oracle-sales.png');
+}
+.oracle-service-7 { 
+    background-image: url('/assets/images/oracle/oracle-loyalty.png');
+}
+.oracle-service-8 { 
+    background-image: url('/assets/images/oracle/oracle-bluekai.png');
+}
+.oracle-service-9 { 
+    background-image: url('/assets/images/oracle/oracle-content.png');
+}
+.oracle-service-10 { 
+    background-image: url('/assets/images/oracle/oracle-social.png');
+}
+.oracle-service-11 { 
+    background-image: url('/assets/images/oracle/oracle-ics.png');
+}
+.oracle-service-12 { 
+    background-image: url('/assets/images/oracle/oracle-analytics.png');
+}
+/* ORACLE SERVICES END */
+
+/* PROJETOS START */
+#projetos .title { 
+    font-size: 57px;
+}
+.projects { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 40px;
+}
+.project { 
+    background-image: url('/assets/images/frame-cases.png');
+    background-repeat: no-repeat;
+    position: relative;
+    width: 188px;
+    height: 188px;
+    background-size: contain;
+}
+.project img { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-60%, -50%);
+}
+/* PROJETOS END */
+
+/* START CONTACT FORM  */
+#contact-form { 
+    width: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    height: 100vh;
+    padding: 40px 30px;
+    z-index: 99;
+    transition: .2s;
+}
+#contact-form .title { 
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+#contact-form.active { 
+    width: 610px;
+    visibility: visible;
+}
+
+.close-contact { 
+    border: none;
+    background-color: transparent;
+}
+
+.close-contact img { 
+    width: 32px;
+}
+
+.submit-contact{ 
+    background-color: #f59c00;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 22px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 4px;
+}
+/* END CONTACT FORM  */
+
+
+@media (max-width: 994px) { 
+    .carousel-item{ 
+        background-position: top;
+    }
+
+    #what-we-do{ 
+        font-size: 16px;
+    }
+    #automacao-marketing, 
+    #crm-loyalty, 
+    #e-commerce{ 
+        margin: auto 10%;
+    }
+    .oracle-cx-logo { 
+        border: none;
+    }
+}
+
+@media (max-width: 764px) { 
+    .oracle-services { 
+        grid-template-columns: 1fr 1fr;
+    }
+    .projects{ 
+        grid-template-columns: 1fr 1fr;
+    }
+    #contact-form.active{ 
+        width: 100vw;
+    }
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Varela';
+    src: url('../fonts/VarelaRound-Regular.ttf');
+}
+*{ 
+    font-family: Varela !important;
+}
+.text-red { 
+    color: #ff0000;
+}
+
+.text-orange { 
+    color: #f59c00;
+}
+
+.text-gray { 
+    color: #929292;
+}
