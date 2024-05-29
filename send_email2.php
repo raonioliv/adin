@@ -6,9 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ocupacao = $_POST['occupation'];
     $mensagem = $_POST['message'];
     $assunto = "Adin - Contato";
-    $file = $_FILES["inputFile"];
-    $attachment = $file["tmp_name"];
-    $attachmentName = $file["name"];
 
     $headers = "From: raoni.rocha@alphasquad.cx";
     $headers .= "\r\nMIME-Version: 1.0";
@@ -23,12 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Assunto: $subejct\r\n\r\n";
     $body .= "Mensagem: $message\r\n\r\n";
 
-    $body .= "--boundary\r\n";
-    $body .= "Content-Type: application/octet-stream; name="$attachmentName"\r\n";
-    $body .= "Content-Transfer-Encoding: base64\r\n";
-    $body .= "Content-Disposition: attachment; filename="$attachmentName"\r\n\r\n";
-    $body .= chunk_split(base64_encode(file_get_contents($attachment))) . "\r\n";
-    $body .= "--boundary--";
+
     mail("raoni.rocha@alphasquad.cx", $assunto, $body, $headers);
     header('Location: index.html'); 
     die();
