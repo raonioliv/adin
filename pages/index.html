@@ -102,10 +102,7 @@
                             Trabalhamos para transformar dados em comunicação em tempo real, entregando a mensagem certa para a audiência certa, no canal apropriado e no momento mais oportuno.
                         </p>
                         <div class="buttons d-flex">
-                            <a href="" class="text-uppercase view-cases">
-                                Veja os cases
-                            </a>
-                            <a href="" class="text-uppercase more-info">
+                            <a href="" class="text-uppercase more-info contact-button">
                                 Saiba mais
                             </a>
                         </div>
@@ -126,10 +123,7 @@
                             Seja em Atendimento Multicanal, Programas de Fidelidade, Gestão de Relacionamento ou Incentivo a Equipes de Vendas, entregamos soluções sob medida que alavancam resultados incrementando valor no ciclo de vida dos clientes.
                         </p>
                         <div class="buttons d-flex">
-                            <a href="" class="text-uppercase view-cases">
-                                Veja os cases
-                            </a>
-                            <a href="" class="text-uppercase more-info">
+                            <a href="" class="text-uppercase more-info contact-button">
                                 Saiba mais
                             </a>
                         </div>
@@ -155,10 +149,7 @@
                         </p>
    
                         <div class="buttons d-flex">
-                            <a href="" class="text-uppercase view-cases">
-                                Veja os cases
-                            </a>
-                            <a href="" class="text-uppercase more-info">
+                            <a href="" class="text-uppercase more-info contact-button">
                                 Saiba mais
                             </a>
                         </div>
@@ -182,7 +173,7 @@
                                 <h4>Implantação de projetos</h4>
                             </div>
 
-                            <a href="" class="text-uppercase text-orange discover-button">Descubra como</a>
+                            <a href="" class="text-uppercase text-orange discover-button contact-button">Descubra como</a>
 
                         </div>
                     </div>
@@ -200,7 +191,7 @@
                                 <h4>Evolução e sustentação técnica</h4>
                             </div>
 
-                            <a href="" class="text-uppercase text-orange discover-button">Descubra como</a>
+                            <a href="" class="text-uppercase text-orange discover-button contact-button">Descubra como</a>
 
                         </div>
                     </div>
@@ -218,7 +209,7 @@
                                 <h4>Opração de Plataformas</h4>
                             </div>
 
-                            <a href="" class="text-uppercase text-orange discover-button">Descubra como</a>
+                            <a href="" class="text-uppercase text-orange discover-button contact-button">Descubra como</a>
 
                         </div>
                     </div>
@@ -236,7 +227,7 @@
                                 <h4>Gestão de Performance</h4>
                             </div>
 
-                            <a href="" class="text-uppercase text-orange discover-button">Descubra como</a>
+                            <a href="" class="text-uppercase text-orange discover-button contact-button">Descubra como</a>
 
                         </div>
                     </div>
@@ -254,7 +245,7 @@
                                 <h4>Gestão de Performance</h4>
                             </div>
 
-                            <a href="" class="text-uppercase text-orange discover-button">Descubra como</a>
+                            <a href="" class="text-uppercase text-orange discover-button contact-button">Descubra como</a>
 
                         </div>
                     </div>
@@ -417,22 +408,22 @@
             <div>
                 <h3 class="text-center text-uppercase text-orange title">Vamos começar?</h3>
             </div>
-            <form action="">
+            <form action="/send_email.php" method="post">
                 <div class="form-group mb-3 required">
                     <label for="name" class="form-label">Seu nome (obrigatório)</label>
-                    <input id="name" type="text" class="form-control" >
+                    <input id="name" required name="name" type="text" class="form-control" >
                 </div>
                 <div class="form-group mb-3 required">
                     <label for="email" class="form-label">Seu email (obrigatório)</label>
-                    <input id="email" type="text" class="form-control" >
+                    <input id="email" required name="email" type="text" class="form-control" >
                 </div>
                 <div class="form-group mb-3">
                     <label for="subject" class="form-label">Assunto</label>
-                    <input id="subject" type="text" class="form-control" >
+                    <input id="subject" required name="subject" type="text" class="form-control" >
                 </div>
                 <div class="form-group mb-3">
                     <label for="name" class="form-label">Mensagem</label>
-                    <textarea name="message" id="message" class="form-control" rows="6"></textarea>
+                    <textarea name="message" required name="message" id="message" class="form-control" rows="6"></textarea>
                 </div>
 
                 <div class="form-group">

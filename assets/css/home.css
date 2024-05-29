@@ -84,12 +84,14 @@
     color: #f59c00;
     border: 1px solid #f59c00;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 0   20px;
     font-size: 20px;
     text-align: center;
     display: flex;
     align-items: center;
     width: 250px;
+    justify-content: center;
+    align-items: center;
 }
 .view-cases::before {
     content: url("/assets/images/icons/verified.svg");
@@ -97,6 +99,8 @@
 /* END WHAT-WE-DO BLOCKS  */
 .more-info::before {
     content: url("/assets/images/icons/plus.svg");
+    transform: translateY(4px);
+    margin-right: 12px;
  }
 /* END WHAT-WE-DO BLOCKS  */
 
