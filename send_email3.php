@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
     $body .= "Nome: $name\r\n";
     $body .= "E-mail: $email\r\n";
-    $body .= "Assunto: $subejct\r\n\r\n";
     $body .= "Mensagem: $message\r\n\r\n";
     $body .= "Pretensão salarial: $salaryExpect\r\n\r\n";
     $body .= "Área de atuação: $occupation\r\n\r\n";
