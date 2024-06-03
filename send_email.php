@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST['name'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
-    $assunto = $_POST['subject'];
-    $mensagem = $_POST['message'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
     $assunto = "Adin - Contato";
 
     $headers = "From: raoni.rocha@alphasquad.cx";

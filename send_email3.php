@@ -2,13 +2,13 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['name'];
     $email = $_POST['email'];
-    $pretensao = $_POST['salaryExpect'];
-    $ocupacao = $_POST['occupation'];
+    $salaryExpect = $_POST['salaryExpect'];
+    $occupation = $_POST['occupation'];
     $mensagem = $_POST['message'];
     $assunto = "Adin - Contato";
     $file = $_FILES["inputFile"];
-    $attachment = $file["tmp_name"];
-    $attachmentName = $file["name"];
+    $attachment = $file["inputFile"];
+    $attachmentName = $file["inputFile"];
 
     $headers = "From: raoni.rocha@alphasquad.cx";
     $headers .= "\r\nMIME-Version: 1.0";
@@ -22,6 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "E-mail: $email\r\n";
     $body .= "Assunto: $subejct\r\n\r\n";
     $body .= "Mensagem: $message\r\n\r\n";
+    $body .= "Pretensão salarial: $salaryExpect\r\n\r\n";
+    $body .= "Área de atuação: $occupation\r\n\r\n";
+    
 
     $body .= "--boundary\r\n";
     $body .= "Content-Type: application/octet-stream; name="$attachmentName"\r\n";

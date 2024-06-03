@@ -2,9 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['name'];
     $email = $_POST['email'];
-    $pretensao = $_POST['salaryExpect'];
-    $ocupacao = $_POST['occupation'];
-    $mensagem = $_POST['message'];
+    $message = $_POST['message'];
     $assunto = "Adin - Contato";
 
     $headers = "From: raoni.rocha@alphasquad.cx";
