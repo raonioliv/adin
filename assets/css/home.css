@@ -35,11 +35,16 @@
     height: 2000px;
  }
 /* START WHAT-WE-DO  */
+
 #what-we-do { 
     background-color: #f3f3f3;
     font-size: 22px;
 }
-
+.what-we-do-grid { 
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
 #what-we-do .title{
     border-bottom: 2px solid #f59c00;
 }
@@ -110,6 +115,9 @@
 }
 
 
+.services-item { 
+    margin-bottom: 5rem;
+}
 
 .service-card { 
     border: 1px solid #000;
@@ -248,6 +256,9 @@
 /* ORACLE SERVICES END */
 
 /* PROJETOS START */
+#projetos{ 
+    padding: 5rem 0;
+}
 #projetos .title { 
     font-size: 57px;
 }
